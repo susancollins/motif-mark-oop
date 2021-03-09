@@ -218,7 +218,12 @@ for i in RECORDS:
     gene_group = GeneGroup(exon, gene, motif, gene_name)
     gene_group.draw(context, gene_number)
 
-
+context.select_font_face("Sans", cairo.FONT_SLANT_NORMAL,
+                        cairo.FONT_WEIGHT_NORMAL)
+context.set_font_size(16)
+context.move_to(LEFT_MARGIN, 20)
+context.set_source_rgba(0, 0, 0)
+context.show_text("Motif key:")
 surface.finish()
 
 
