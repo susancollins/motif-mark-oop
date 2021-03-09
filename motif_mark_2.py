@@ -107,7 +107,7 @@ class Motif:
     def draw_legend(self, context):
         #draw legend
         for motif in self.locations:
-            y0 = 25*self.locations[motif][0]
+            y0 = 25*self.locations[motif][0]+20
             context.set_line_width(20)
             motif_color = MOTIF_COLOR_PAL[self.locations[motif][0]-1]
             context.set_source_rgba(motif_color[0], motif_color[1], motif_color[2])
